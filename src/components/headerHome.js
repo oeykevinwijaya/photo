@@ -1,22 +1,26 @@
-function headerHome() {
+function HeaderHome() {
     return (
-        <div>
-            <div class="grid grid-cols-12">
-                <h1 class="col-span-2 font-semibold text-4xl tracking-widest">
-                    Selah
+        <div className="sticky top-0 bg-white z-50 pb-2">
+            <div className="grid grid-cols-12 items-end">
+                <h1 className="col-span-3 font-semibold text-6xl tracking-widest">
+                    selah.
                 </h1>
-                <div class="col-start-10 col-span-1 font-semibold text-1xl underline">
-                    Home
+                <div className="col-start-7 col-span-2 flex justify-end">
+                    <div className="font-semibold text-2xl underline">Home</div>
                 </div>
-                <div class="col-span-1 font-semibold text-1xl hover:underline ">
-                    Gallery
+                <div className="col-span-2 flex justify-end">
+                    <div className="font-semibold text-2xl hover:underline">
+                        Gallery
+                    </div>
                 </div>
-                <div class="col-span-1 font-semibold text-1xl hover:underline">
-                    Contact
+                <div className="col-span-2 flex justify-end">
+                    <div className="font-semibold text-2xl hover:underline">
+                        Contact
+                    </div>
                 </div>
             </div>
         </div>
     );
 }
 
-export default headerHome;
+export default HeaderHome;
