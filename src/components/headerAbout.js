@@ -1,14 +1,30 @@
-function headerAbout() {
+import { Link } from "react-router-dom";
+
+function HeaderAbout() {
     return (
-        <div>
-            <div class="grid grid-cols-12">
-                <h1 class="col-span-2">Selah</h1>
-                <div class="col-start-10 col-span-1">Home</div>
-                <div class="col-span-1">Gallery</div>
-                <div class="col-span-1">Contact</div>
+        <div className="sticky top-0 z-50 pb-3 mb-2 bg-white">
+            <div className="grid items-end grid-cols-12">
+                <h1 className="col-span-3 text-4xl font-semibold tracking-widest lg:text-6xl md:text-5xl">
+                    selah.
+                </h1>
+                <div className="flex justify-end col-span-2 col-start-7">
+                    <div className="text-lg font-semibold hover:underline underline-offset-8 lg:text-2xl md:text-xl">
+                        <Link to={"/"}>Home</Link>
+                    </div>
+                </div>
+                <div className="flex justify-end col-span-2">
+                    <div className="text-lg font-semibold hover:underline underline-offset-8 lg:text-2xl md:text-xl">
+                        <Link to={"/gallery"}>Gallery</Link>
+                    </div>
+                </div>
+                <div className="flex justify-end col-span-2">
+                    <div className="text-lg font-semibold underline underline-offset-8 lg:text-2xl md:text-xl">
+                        <Link to={"/about"}>Contact</Link>
+                    </div>
+                </div>
             </div>
         </div>
     );
 }
 
-export default headerAbout;
+export default HeaderAbout;

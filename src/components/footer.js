@@ -1,14 +1,16 @@
-const footer = () => {
+const Footer = () => {
     return (
-        <div>
-            <div class="grid grid-cols-12 my-5">
-                <div className="col-start-10 col-span-2 underline text-center">
+        <div className="grid grid-cols-12 mt-5">
+            <div className="col-span-4 text-sm text-left">
+                &copy; 2023 Selah
+            </div>
+            <div className="col-span-8 text-sm text-right">
+                <span className="font-semibold underline underline-offset-4">
                     oey kevin wijaya
-                </div>
-                <div className="col-span-1">2023</div>
+                </span>
             </div>
         </div>
     );
 };
 
-export default footer;
+export default Footer;

@@ -5,8 +5,8 @@ import Footer from "./components/footer";
 function App() {
     return (
         <>
-            <div className="flex flex-col mx-6 mt-4">
-                <div className="flex-grow">
+            <div className="mx-6 mt-4">
+                <div className="">
                     <AppRoutes />
                 </div>
                 <Footer />

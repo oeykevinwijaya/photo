@@ -16,8 +16,8 @@ const home = () => {
 
 function Content() {
     return (
-        <div className="mt-5 mb-9">
-            <img src={Interior2} alt="interior-2" className="w-full" />
+        <div className="flex justify-center mt-5 mb-9">
+            <img src={Interior2} alt="interior-2" className="" />
         </div>
     );
 }
@@ -25,41 +25,43 @@ function Content() {
 function Cards() {
     return (
         <div className="flex flex-col">
-            <div className="font-semibold text-3xl mb-4">Library</div>
+            <div className="mb-4 text-2xl font-semibold lg:text-3xl">
+                Library
+            </div>
             <div className="grid grid-cols-12">
-                <div className="col-span-4 flex flex-col pr-6">
+                <div className="flex flex-col col-span-4 pr-6">
                     <div className="aspect-[3/2]">
                         <img
                             src={Cards1}
                             alt="architecture"
-                            className="w-full h-full object-cover"
+                            className="object-cover w-full h-full"
                         />
                     </div>
-                    <div className="text-center font-semibold text-lg mt-3">
+                    <div className="mt-3 text-lg font-semibold text-center">
                         architecture
                     </div>
                 </div>
-                <div className="col-span-4 flex flex-col px-3">
+                <div className="flex flex-col col-span-4 px-3">
                     <div className="aspect-[3/2]">
                         <img
                             src={Cards2}
                             alt="f & b"
-                            className="w-full h-full object-cover"
+                            className="object-cover w-full h-full"
                         />
                     </div>
-                    <div className="text-center font-semibold text-lg mt-3">
+                    <div className="mt-3 text-lg font-semibold text-center">
                         f & b
                     </div>
                 </div>
-                <div className="col-span-4 flex flex-col pl-6">
+                <div className="flex flex-col col-span-4 pl-6">
                     <div className="aspect-[3/2]">
                         <img
                             src={Cards3}
                             alt="architecture"
-                            className="w-full h-full object-cover"
+                            className="object-cover w-full h-full"
                         />
                     </div>
-                    <div className="text-center font-semibold text-lg mt-3">
+                    <div className="mt-3 text-lg font-semibold text-center">
                         fashion
                     </div>
                 </div>
