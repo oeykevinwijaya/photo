@@ -6,7 +6,7 @@ import About from "../pages/about";
 
 const AppRoutes = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/oeykevinwijaya">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/gallery" element={<Gallery />} />
