@@ -8,17 +8,17 @@ function HeaderGallery() {
                     selah.
                 </h1>
                 <div className="flex justify-end col-span-2 col-start-7">
-                    <div className="text-lg font-semibold hover:underline underline-offset-8 lg:text-2xl md:text-xl">
+                    <div className="text-lg font-semibold hover:underline underline-offset-8 lg:text-3xl md:text-xl">
                         <Link to={"/"}>Home</Link>
                     </div>
                 </div>
                 <div className="flex justify-end col-span-2">
-                    <div className="text-lg font-semibold underline underline-offset-8 lg:text-2xl md:text-xl">
+                    <div className="text-lg font-semibold underline underline-offset-8 lg:text-3xl md:text-xl">
                         <Link to={"/gallery"}>Gallery</Link>
                     </div>
                 </div>
                 <div className="flex justify-end col-span-2">
-                    <div className="text-lg font-semibold hover:underline underline-offset-8 lg:text-2xl md:text-xl">
+                    <div className="text-lg font-semibold hover:underline underline-offset-8 lg:text-3xl md:text-xl">
                         <Link to={"/about"}>Contact</Link>
                     </div>
                 </div>

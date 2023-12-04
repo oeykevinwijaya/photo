@@ -29,7 +29,7 @@ function Cards() {
                 Library
             </div>
             <div className="grid grid-cols-12">
-                <div className="flex flex-col col-span-4 pr-6">
+                <div className="flex flex-col col-span-4 pr-6 hover:underline underline-offset-8">
                     <div className="aspect-[3/2]">
                         <img
                             src={Cards1}
@@ -37,11 +37,11 @@ function Cards() {
                             className="object-cover w-full h-full"
                         />
                     </div>
-                    <div className="mt-3 text-lg font-semibold text-center">
+                    <div className="mt-3 text-lg font-semibold text-center lg:text-3xl">
                         architecture
                     </div>
                 </div>
-                <div className="flex flex-col col-span-4 px-3">
+                <div className="flex flex-col col-span-4 px-3 hover:underline underline-offset-8">
                     <div className="aspect-[3/2]">
                         <img
                             src={Cards2}
@@ -49,11 +49,11 @@ function Cards() {
                             className="object-cover w-full h-full"
                         />
                     </div>
-                    <div className="mt-3 text-lg font-semibold text-center">
+                    <div className="mt-3 text-lg font-semibold text-center lg:text-3xl">
                         f & b
                     </div>
                 </div>
-                <div className="flex flex-col col-span-4 pl-6">
+                <div className="flex flex-col col-span-4 pl-6 hover:underline underline-offset-8">
                     <div className="aspect-[3/2]">
                         <img
                             src={Cards3}
@@ -61,7 +61,7 @@ function Cards() {
                             className="object-cover w-full h-full"
                         />
                     </div>
-                    <div className="mt-3 text-lg font-semibold text-center">
+                    <div className="mt-3 text-lg font-semibold text-center lg:text-3xl">
                         fashion
                     </div>
                 </div>
