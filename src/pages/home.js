@@ -27,7 +27,7 @@ function Cards() {
       return (
             <div className="flex flex-col">
                   <div className="mb-1 text-2xl font-semibold md:mb-3 lg:mb-4 sm:text-3xl md:text-4xl lg:text-5xl">
-                        Library
+                        library
                   </div>
                   <div className="grid grid-cols-12 gap-2 lg:gap-3">
                         <div className="flex flex-col col-span-4 hover:underline underline-offset-8">

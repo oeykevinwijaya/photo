@@ -9,17 +9,17 @@ function HeaderAbout() {
                         </h1>
                         <div className="flex justify-end col-span-2 col-start-7">
                               <div className="font-semibold text-md underline-offset-8 hover:underline sm:text-xl md:text-2xl lg:text-3xl">
-                                    <Link to={"/"}>Home</Link>
+                                    <Link to={"/"}>home</Link>
                               </div>
                         </div>
                         <div className="flex justify-end col-span-2">
                               <div className="font-semibold text-md underline-offset-8 hover:underline sm:text-xl md:text-2xl lg:text-3xl">
-                                    <Link to={"/gallery"}>Gallery</Link>
+                                    <Link to={"/gallery"}>gallery</Link>
                               </div>
                         </div>
                         <div className="flex justify-end col-span-2">
                               <div className="font-semibold underline text-md underline-offset-8 sm:text-xl md:text-2xl lg:text-3xl">
-                                    <Link to={"/about"}>Contact</Link>
+                                    <Link to={"/about"}>contact</Link>
                               </div>
                         </div>
                   </div>

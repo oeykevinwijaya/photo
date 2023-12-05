@@ -14,11 +14,11 @@ function Content() {
       return (
             <div className="mt-5 mb-9">
                   <div className="grid grid-cols-12 gap-3">
-                        <div className="col-span-6 sm:col-start-4 sm:col-span-3">
+                        <div className="col-span-6 md:col-start-3 md:col-span-4 sm:col-start-2 sm:col-span-5 lg:col-span-3 lg:col-start-4">
                               <img
                                     src={Aboutpic}
                                     alt="interior-2"
-                                    className="object-cover object-right max-h-72 sm:max-h-80 lg:max-h-96"
+                                    className="object-cover w-full rounded-md h-96 lg:h-full sm:w-full"
                               />
                         </div>
                         <div className="col-span-6 ml-3">
@@ -56,7 +56,7 @@ function Content() {
                               </div>
                               <div>
                                     <button className="px-2 py-1 font-semibold text-white bg-blue-500 rounded-md lg:text-xl text-md lg:px-3 lg:py-2 hover:bg-blue-600">
-                                          Submit
+                                          Submit (not yet implemented)
                                     </button>
                               </div>
                         </div>
