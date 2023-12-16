@@ -2,26 +2,39 @@ import HeaderAbout from "../components/headerAbout";
 import Aboutpic from "../picture/about.jpg";
 
 const About = () => {
-      return (
-            <div>
-                  <HeaderAbout />
-                  <Content />
-            </div>
-      );
+    return (
+        <div>
+            <HeaderAbout />
+            <Content />
+        </div>
+    );
 };
 
 function Content() {
-      return (
-            <div className="mt-5 mb-9">
-                  <div className="grid grid-cols-12 gap-3">
-                        <div className="col-span-6 md:col-start-3 md:col-span-4 sm:col-start-2 sm:col-span-5 lg:col-span-3 lg:col-start-4">
-                              <img
-                                    src={Aboutpic}
-                                    alt="interior-2"
-                                    className="object-cover w-full rounded-md h-96 lg:h-full sm:w-full"
-                              />
-                        </div>
-                        <div className="col-span-6 ml-3">
+    return (
+        <div className="mt-5 mb-9">
+            <div className="grid grid-cols-12 gap-3 mx-3">
+                <div className="col-span-6 col-start-1 md:col-start-3 md:col-span-4 sm:col-start-2 sm:col-span-5 lg:col-span-3 lg:col-start-4">
+                    <img
+                        src={Aboutpic}
+                        alt="interior-2"
+                        className="object-cover w-full rounded-md h-96 lg:h-full sm:w-full"
+                    />
+                </div>
+                <div className="col-span-6 ml-3 md:col-span-5">
+                    <div className="mb-4 text-3xl font-bold md:text-2xl">
+                        about me
+                    </div>
+                    <div className="text-base md:text-xl">
+                        I'm Kevin, a seasoned photographer with over 6 years of
+                        experience. My experience are various, from
+                        architecture, food, fashion, weddings, events, products,
+                        and drone photography. I dedicate extra effort to
+                        capturing intricate details, ensuring that the results
+                        are of high quality and delivered promptly.
+                    </div>
+                </div>
+                {/* <div className="col-span-6 ml-3">
                               <div className="mb-1 text-lg font-semibold lg:mb-4 sm:text-xl md:text-2xl lg:text-3xl">
                                     Submit an Enquiry
                               </div>
@@ -59,10 +72,10 @@ function Content() {
                                           Submit (not yet implemented)
                                     </button>
                               </div>
-                        </div>
-                  </div>
+                        </div> */}
             </div>
-      );
+        </div>
+    );
 }
 
 export default About;

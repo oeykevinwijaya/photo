@@ -5,7 +5,8 @@ import Footer from "./components/footer";
 function App() {
     return (
         <>
-            <div className="mx-6 mt-4">
+            <div className="">
+                {/* <div className="mx-6 mt-4"> */}
                 <div className="">
                     <AppRoutes />
                 </div>
