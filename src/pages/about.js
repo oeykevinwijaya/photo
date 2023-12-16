@@ -25,7 +25,7 @@ function Content() {
                     <div className="mb-4 text-3xl font-bold md:text-2xl">
                         about me
                     </div>
-                    <div className="text-base md:text-xl">
+                    <div className="text-sm sm:text-lg md:text-xl">
                         I'm Kevin, a seasoned photographer with over 6 years of
                         experience. My experience are various, from
                         architecture, food, fashion, weddings, events, products,

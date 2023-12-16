@@ -1,11 +1,12 @@
 // import HeaderHome from "../components/headerHome";
-import Interior2 from "../picture/interior-2.jpg";
 import Cards1 from "../picture/cards-1a.jpg";
 import Cards2 from "../picture/cards-2.jpg";
 import Cards3 from "../picture/cards-3a.jpg";
 import { Link } from "react-router-dom";
 import bg from "../picture/interior-2.jpg";
 import HeaderHome from "../components/headerHome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 
 const home = () => {
     return (
@@ -24,22 +25,35 @@ function Content() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
     };
+    const handleScrollToBottom = () => {
+        // Scroll to the bottom of the page
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth", // Optional: Adds smooth scrolling effect
+        });
+    };
 
     return (
         <main className="w-screen h-screen" style={styles}>
             <HeaderHome />
 
             <div className="h-full flex flex-col justify-center px-[1rem] lg:px-[4rem]">
-                <h1 className="text-[#FFF] font-bold text-4xl md:text-5xl lg:text-6xl">
-                    hello world
+                <h1 className="text-[#FFF] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                    hi people!
                 </h1>
                 {/* <h3 className="text-white text-[2rem] font-bold ">
                     design studio
                 </h3> */}
-
-                <button className="w-1/3 md:w-2/5 lg:w-1/4 lg: py-0 lg:py-[6px] rounded-3xl text-lg lg:text-2xl font-semibold bg-[#98EC65] hover:bg-[#81E047] mt-[1rem] ">
+                <button className="w-1/3 md:w-2/5 lg:w-1/4 lg: py-2 lg:py-[6px] rounded-3xl text-sm lg:text-2xl font-semibold bg-[#98EC65] hover:bg-[#81E047] mt-[1rem] ">
                     <Link to={"/gallery"}>explore gallery</Link>
                 </button>
+                <FontAwesomeIcon
+                    onClick={handleScrollToBottom}
+                    bounce
+                    icon={faChevronCircleDown}
+                    className="inset-x-0 bottom-0 h-10 pt-96 lg:h-14 btnClose"
+                    style={{ color: "#98ec65" }}
+                />
             </div>
         </main>
     );
@@ -95,6 +109,11 @@ function Cards() {
                     </div>
                 </div>
             </div>
+            <FontAwesomeIcon
+                icon="fa-solid fa-circle-chevron-down"
+                bounce
+                style={{ color: "#9e9e9e" }}
+            />
         </div>
     );
 }
