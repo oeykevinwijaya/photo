@@ -77,7 +77,7 @@ const Content = () => {
                     <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
                         hi people!
                     </h1>
-                    <button className="w-1/3 md:w-2/5 lg:w-1/4 lg: py-2 lg:py-[6px] rounded-3xl text-sm lg:text-2xl font-semibold bg-[#98EC65] hover:bg-[#81E047] mt-[1rem]">
+                    <button className="w-1/3 md:w-2/5 lg:w-1/4 lg: py-2 lg:py-[6px] rounded-3xl text-sm lg:text-2xl font-semibold bg-[#7ec4cf] hover:bg-[#7ec4cf] mt-[1rem]">
                         <Link to={"/gallery"}>explore gallery</Link>
                     </button>
                     <FontAwesomeIcon
@@ -85,7 +85,7 @@ const Content = () => {
                         bounce
                         icon={faChevronCircleDown}
                         className="inset-x-0 bottom-0 h-10 pt-96 lg:h-14 btnClose"
-                        style={{ color: "#98ec65" }}
+                        style={{ color: "#7ec4cf" }}
                     />
                 </div>
             </div>
