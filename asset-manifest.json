@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photo/static/css/main.f4f01bc0.css",
-    "main.js": "/photo/static/js/main.27820cae.js",
+    "main.css": "/photo/static/css/main.58eab8ac.css",
+    "main.js": "/photo/static/js/main.16eb29e1.js",
     "static/js/787.7efd31bd.chunk.js": "/photo/static/js/787.7efd31bd.chunk.js",
     "static/media/fnb1.jpg": "/photo/static/media/fnb1.c3c81fe43701d735c346.jpg",
     "static/media/fnb16.jpg": "/photo/static/media/fnb16.2cc0088531bf7d21d372.jpg",
@@ -18,12 +18,13 @@
     "static/media/arc6.jpg": "/photo/static/media/arc6.6bdd6dfd587c40e09c94.jpg",
     "static/media/fas21.jpg": "/photo/static/media/fas21.cffe11a107247fd95af5.jpg",
     "static/media/fas14.jpg": "/photo/static/media/fas14.9c0a97dc7181011c99e5.jpg",
+    "static/media/home2.jpg": "/photo/static/media/home2.053843cde824770a1dff.jpg",
     "static/media/fas2.jpg": "/photo/static/media/fas2.a0dfa3ffb196edc26479.jpg",
     "static/media/fas13.jpg": "/photo/static/media/fas13.b75303819f2762c56073.jpg",
     "static/media/fnb22.jpg": "/photo/static/media/fnb22.ef0431340202bc7e5f0e.jpg",
     "static/media/fnb15.jpg": "/photo/static/media/fnb15.76595012213147463e7d.jpg",
     "static/media/fnb24.jpg": "/photo/static/media/fnb24.29469ee2bda044e2b853.jpg",
-    "static/media/home2.jpg": "/photo/static/media/home2.7fd93770b17d6e35ad53.jpg",
+    "static/media/interior-2.jpg": "/photo/static/media/interior-2.e1a197fb68321ea7fd8f.jpg",
     "static/media/arc11.jpg": "/photo/static/media/arc11.ed618b55252fbf156672.jpg",
     "static/media/arc20.jpg": "/photo/static/media/arc20.f99f2d5883a291f0afd3.jpg",
     "static/media/arc7.jpg": "/photo/static/media/arc7.bd47995d8916add3678c.jpg",
@@ -39,7 +40,6 @@
     "static/media/arc9.jpg": "/photo/static/media/arc9.088daed608303d1c524b.jpg",
     "static/media/fnb13.jpg": "/photo/static/media/fnb13.4b6b51d91907fae41421.jpg",
     "static/media/arc12.jpg": "/photo/static/media/arc12.4945aabe9d7afae43313.jpg",
-    "static/media/interior-2.jpg": "/photo/static/media/interior-2.6619589b49b81ae7b4d2.jpg",
     "static/media/arc2.jpg": "/photo/static/media/arc2.44d9d6c53ec992153857.jpg",
     "static/media/fas6.jpg": "/photo/static/media/fas6.a7402f2804e7577a1680.jpg",
     "static/media/arc17.jpg": "/photo/static/media/arc17.591736fc0e5275c33920.jpg",
@@ -51,7 +51,6 @@
     "static/media/fas5.jpg": "/photo/static/media/fas5.3ab1a28d0a6ee114ba71.jpg",
     "static/media/arc8.jpg": "/photo/static/media/arc8.603a78bb3f31cc122358.jpg",
     "static/media/fas10.jpg": "/photo/static/media/fas10.9fd086310021c21cd354.jpg",
-    "static/media/home3.jpg": "/photo/static/media/home3.9fd086310021c21cd354.jpg",
     "static/media/fnb3.jpg": "/photo/static/media/fnb3.674cf785c4ddae98d312.jpg",
     "static/media/arc18.jpg": "/photo/static/media/arc18.d2befda62f0a774ddbf9.jpg",
     "static/media/arc4.jpg": "/photo/static/media/arc4.0330f8b8890a2ab4c9ba.jpg",
@@ -68,6 +67,7 @@
     "static/media/arc14.jpg": "/photo/static/media/arc14.fbc3acac0c646b003125.jpg",
     "static/media/fnb19.jpg": "/photo/static/media/fnb19.c27030ec1706e49b5a95.jpg",
     "static/media/fas15.jpg": "/photo/static/media/fas15.578c79d1189cffd0e9e1.jpg",
+    "static/media/home3.jpg": "/photo/static/media/home3.bcfc9f63a5183cabf675.jpg",
     "static/media/fas11.jpg": "/photo/static/media/fas11.ac5bb4934b60a77f9ece.jpg",
     "static/media/about.jpg": "/photo/static/media/about.5d480e981b9a5e290840.jpg",
     "static/media/arc21.jpg": "/photo/static/media/arc21.1e892603b98f40cc1b40.jpg",
@@ -83,12 +83,12 @@
     "static/media/fas20.jpg": "/photo/static/media/fas20.3cc7be84cacebb4beb15.jpg",
     "static/media/fas9.jpg": "/photo/static/media/fas9.0b7453720d0bcab8dc74.jpg",
     "index.html": "/photo/index.html",
-    "main.f4f01bc0.css.map": "/photo/static/css/main.f4f01bc0.css.map",
-    "main.27820cae.js.map": "/photo/static/js/main.27820cae.js.map",
+    "main.58eab8ac.css.map": "/photo/static/css/main.58eab8ac.css.map",
+    "main.16eb29e1.js.map": "/photo/static/js/main.16eb29e1.js.map",
     "787.7efd31bd.chunk.js.map": "/photo/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4f01bc0.css",
-    "static/js/main.27820cae.js"
+    "static/css/main.58eab8ac.css",
+    "static/js/main.16eb29e1.js"
   ]
 }
