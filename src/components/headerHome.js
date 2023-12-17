@@ -44,11 +44,9 @@ function HeaderHome() {
 
                 {/* Mobile Menu */}
                 <div
-                    className={
-                        nav
-                            ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-5 justify-center items-center w-full h-screen bg-black/90 text-center ease-in duration-300 text-white"
-                            : "sm:hidden absolute top-0 left-[100%] right-0 bottom-0 flex flex-col gap-5 justify-center items-center w-full h-screen bg-black/90 text-center ease-in duration-300"
-                    }
+                    className={`sm:hidden absolute top-0 left-0 right-0 bottom-0 flex flex-col gap-5 justify-center items-center w-full h-screen bg-black/90 text-center text-white transition-all duration-500 ${
+                        nav ? "" : "opacity-0 pointer-events-none"
+                    }`}
                 >
                     <div
                         onClick={handleNav}
