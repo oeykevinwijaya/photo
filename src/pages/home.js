@@ -19,7 +19,6 @@ const home = () => {
         </div>
     );
 };
-
 const Content = () => {
     const [currentBgIndex, setCurrentBgIndex] = useState(0);
     const backgroundImages = [bg1, bg2, bg3];
@@ -35,11 +34,24 @@ const Content = () => {
     }, []);
 
     const styles = {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImages[currentBgIndex]})`,
+        backgroundImage: `url(${backgroundImages[currentBgIndex]})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         transition: "background-image 1s ease-in-out",
+        WebkitTransition: "background-image 1s ease-in-out", // for WebKit browsers (Chrome, Safari)
+        MozTransition: "background-image 1s ease-in-out", // for Mozilla browsers (Firefox)
+    };
+
+    const overlayColor = "rgba(0, 0, 0, 0.5)";
+
+    const overlayStyle = {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        backgroundColor: overlayColor,
     };
 
     const handleScrollToBottom = () => {
@@ -50,22 +62,32 @@ const Content = () => {
     };
 
     return (
-        <main className="h-screen" style={styles}>
+        <main className="relative h-screen">
             <HeaderHome />
-            <div className="h-full flex flex-col justify-center px-[1rem] lg:px-[4rem]">
-                <h1 className="text-[#FFF] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                    hi people!
-                </h1>
-                <button className="w-1/3 md:w-2/5 lg:w-1/4 lg: py-2 lg:py-[6px] rounded-3xl text-sm lg:text-2xl font-semibold bg-[#98EC65] hover:bg-[#81E047] mt-[1rem] ">
-                    <Link to={"/gallery"}>explore gallery</Link>
-                </button>
-                <FontAwesomeIcon
-                    onClick={handleScrollToBottom}
-                    bounce
-                    icon={faChevronCircleDown}
-                    className="inset-x-0 bottom-0 h-10 pt-96 lg:h-14 btnClose"
-                    style={{ color: "#98ec65" }}
-                />
+            <div className="h-full ">
+                <div
+                    className="absolute top-0 left-0 w-full h-full"
+                    style={styles}
+                ></div>
+                <div
+                    className="absolute top-0 left-0 w-full h-full"
+                    style={overlayStyle}
+                ></div>
+                <div className="h-full flex flex-col justify-center px-[1rem] lg:px-[4rem] relative text-white">
+                    <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
+                        hi people!
+                    </h1>
+                    <button className="w-1/3 md:w-2/5 lg:w-1/4 lg: py-2 lg:py-[6px] rounded-3xl text-sm lg:text-2xl font-semibold bg-[#98EC65] hover:bg-[#81E047] mt-[1rem]">
+                        <Link to={"/gallery"}>explore gallery</Link>
+                    </button>
+                    <FontAwesomeIcon
+                        onClick={handleScrollToBottom}
+                        bounce
+                        icon={faChevronCircleDown}
+                        className="inset-x-0 bottom-0 h-10 pt-96 lg:h-14 btnClose"
+                        style={{ color: "#98ec65" }}
+                    />
+                </div>
             </div>
         </main>
     );
