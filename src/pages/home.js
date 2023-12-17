@@ -34,7 +34,7 @@ function Content() {
     };
 
     return (
-        <main className="w-screen h-screen" style={styles}>
+        <main className="h-screen" style={styles}>
             <HeaderHome />
 
             <div className="h-full flex flex-col justify-center px-[1rem] lg:px-[4rem]">

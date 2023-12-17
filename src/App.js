@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 function App() {
     return (
         <>
-            <div className="">
+            <div className="min-h-screen">
                 {/* <div className="mx-6 mt-4"> */}
                 <div className="">
                     <AppRoutes />

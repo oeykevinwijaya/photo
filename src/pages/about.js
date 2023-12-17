@@ -17,15 +17,15 @@ function Content() {
                 <div className="col-span-6 col-start-1 md:col-start-3 md:col-span-4 sm:col-start-2 sm:col-span-5 lg:col-span-3 lg:col-start-4">
                     <img
                         src={Aboutpic}
-                        alt="interior-2"
-                        className="object-cover w-full rounded-md h-96 lg:h-full sm:w-full"
+                        alt="kevinpic"
+                        className="object-cover w-full rounded-md sm:h-full lg:h-4/5 sm:w-full"
                     />
                 </div>
-                <div className="col-span-6 ml-3 md:col-span-5">
-                    <div className="mb-4 text-3xl font-bold md:text-2xl">
+                <div className="col-span-6 ml-3 md:col-span-5 lg:col-span-3">
+                    <div className="mb-4 text-3xl font-bold md:text-4xl lg:text-5xl">
                         about me
                     </div>
-                    <div className="text-sm sm:text-lg md:text-xl">
+                    <div className="text-sm sm:text-lg md:text-xl lg:text-xl xl:text-2xl">
                         I'm Kevin, a seasoned photographer with over 6 years of
                         experience. My experience are various, from
                         architecture, food, fashion, weddings, events, products,
