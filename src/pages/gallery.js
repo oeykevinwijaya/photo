@@ -10,15 +10,17 @@ const Gallery = () => {
     const [selectedMenu, setSelectedMenu] = useState("architecture");
 
     return (
-        <div className="mx-5">
+        <div className="">
             <HeaderGallery />
-            <GalleryMenu
-                selectedMenu={selectedMenu}
-                setSelectedMenu={setSelectedMenu}
-            />
-            {selectedMenu === "architecture" && <Architecture />}
-            {selectedMenu === "foodandbeverage" && <Foodandbev />}
-            {selectedMenu === "fashion" && <Fashion />}
+            <div className="mx-3">
+                <GalleryMenu
+                    selectedMenu={selectedMenu}
+                    setSelectedMenu={setSelectedMenu}
+                />
+                {selectedMenu === "architecture" && <Architecture />}
+                {selectedMenu === "foodandbeverage" && <Foodandbev />}
+                {selectedMenu === "fashion" && <Fashion />}
+            </div>
         </div>
     );
 };
