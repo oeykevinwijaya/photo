@@ -20,7 +20,10 @@ import fas17 from "../picture/fas/fas17.jpg";
 import fas18 from "../picture/fas/fas18.jpg";
 import fas19 from "../picture/fas/fas19.jpg";
 import fas20 from "../picture/fas/fas20.jpg";
-// import fas21 from "../picture/fas/fas21.jpg";
+import fas21 from "../picture/fas/fas21.jpg";
+import fas22 from "../picture/fas/fas22.jpg";
+import fas23 from "../picture/fas/fas23.jpg";
+import fas24 from "../picture/fas/fas24.jpg";
 
 export const Fashion = () => {
     const galleryImages = [
@@ -44,7 +47,10 @@ export const Fashion = () => {
         { img: fas18 },
         { img: fas19 },
         { img: fas20 },
-        // { img: fas21 },
+        { img: fas21 },
+        { img: fas22 },
+        { img: fas23 },
+        { img: fas24 },
     ];
 
     return (

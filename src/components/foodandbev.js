@@ -20,7 +20,10 @@ import fnb17 from "../picture/fnb/fnb17.jpg";
 import fnb18 from "../picture/fnb/fnb18.jpg";
 import fnb19 from "../picture/fnb/fnb19.jpg";
 import fnb20 from "../picture/fnb/fnb20.jpg";
-// import fnb21 from "../picture/fnb/fnb21.jpg";
+import fnb21 from "../picture/fnb/fnb21.jpg";
+import fnb22 from "../picture/fnb/fnb22.jpg";
+import fnb23 from "../picture/fnb/fnb23.jpg";
+import fnb24 from "../picture/fnb/fnb24.jpg";
 
 export const Foodandbev = () => {
     const galleryImages = [
@@ -44,7 +47,10 @@ export const Foodandbev = () => {
         { img: fnb18 },
         { img: fnb19 },
         { img: fnb20 },
-        // { img: fnb21 },
+        { img: fnb21 },
+        { img: fnb22 },
+        { img: fnb23 },
+        { img: fnb24 },
     ];
 
     return (
