@@ -1,12 +1,14 @@
-// import HeaderHome from "../components/headerHome";
 import Cards1 from "../picture/cards-1a.jpg";
 import Cards2 from "../picture/cards-2.jpg";
 import Cards3 from "../picture/cards-3a.jpg";
 import { Link } from "react-router-dom";
-import bg from "../picture/interior-2.jpg";
+import bg1 from "../picture/interior-2.jpg";
+import bg2 from "../picture/home2.jpg";
+import bg3 from "../picture/home3.jpg";
 import HeaderHome from "../components/headerHome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useEffect } from "react";
 
 const home = () => {
     return (
@@ -18,32 +20,42 @@ const home = () => {
     );
 };
 
-function Content() {
+const Content = () => {
+    const [currentBgIndex, setCurrentBgIndex] = useState(0);
+    const backgroundImages = [bg1, bg2, bg3];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentBgIndex(
+                (prevIndex) => (prevIndex + 1) % backgroundImages.length
+            );
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     const styles = {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${bg})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImages[currentBgIndex]})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+        transition: "background-image 1s ease-in-out",
     };
+
     const handleScrollToBottom = () => {
-        // Scroll to the bottom of the page
         window.scrollTo({
             top: document.body.scrollHeight,
-            behavior: "smooth", // Optional: Adds smooth scrolling effect
+            behavior: "smooth",
         });
     };
 
     return (
         <main className="h-screen" style={styles}>
             <HeaderHome />
-
             <div className="h-full flex flex-col justify-center px-[1rem] lg:px-[4rem]">
                 <h1 className="text-[#FFF] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                     hi people!
                 </h1>
-                {/* <h3 className="text-white text-[2rem] font-bold ">
-                    design studio
-                </h3> */}
                 <button className="w-1/3 md:w-2/5 lg:w-1/4 lg: py-2 lg:py-[6px] rounded-3xl text-sm lg:text-2xl font-semibold bg-[#98EC65] hover:bg-[#81E047] mt-[1rem] ">
                     <Link to={"/gallery"}>explore gallery</Link>
                 </button>
@@ -57,7 +69,7 @@ function Content() {
             </div>
         </main>
     );
-}
+};
 
 function Cards() {
     return (
