@@ -9,7 +9,7 @@ import {
 
 import "./wsp-gallery.css";
 
-const WSPGallery = ({ galleryImages }) => {
+const WSPGalleryB = ({ galleryImages }) => {
     const [slideNumber, setSlideNumber] = useState(0);
     const [openModal, setOpenModal] = useState(false);
 
@@ -72,7 +72,7 @@ const WSPGallery = ({ galleryImages }) => {
       Total Slides: {galleryImages.length}
       <br /><br /> */}
 
-            <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-2 lg:gap-4 ">
+            <div className="grid grid-cols-3 gap-2 md:grid-cols-3 md:gap-2 lg:gap-4 ">
                 {galleryImages &&
                     galleryImages.map((slide, index) => {
                         return (
@@ -94,4 +94,4 @@ const WSPGallery = ({ galleryImages }) => {
     );
 };
 
-export default WSPGallery;
+export default WSPGalleryB;
