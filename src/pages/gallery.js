@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import HeaderGallery from "../components/headerGallery";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -77,6 +77,11 @@ function PrevArrow(props) {
 }
 
 function GalleryMenu({ selectedMenu, setSelectedMenu }) {
+    const [localSelectedMenu, setLocalSelectedMenu] = useState(selectedMenu);
+
+    useEffect(() => {
+        setLocalSelectedMenu(selectedMenu);
+    }, [selectedMenu]);
     const settings = {
         dots: true,
         infinite: true,
@@ -107,7 +112,7 @@ function GalleryMenu({ selectedMenu, setSelectedMenu }) {
                         width: "70vw", // set the width to 70% of the viewport width
                     }}
                     className={`text-md font-semibold underline-offset-8 text-center hover:underline text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl ${
-                        selectedMenu === item
+                        localSelectedMenu === item
                             ? "underline underline-offset-8"
                             : ""
                     }`}
