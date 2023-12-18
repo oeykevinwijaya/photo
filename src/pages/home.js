@@ -101,43 +101,28 @@ function Cards() {
             </div>
             <div className="grid grid-cols-12 gap-2 lg:gap-3">
                 <div className="flex flex-col col-span-4 hover:underline underline-offset-8">
-                    <div className="aspect-[3/2]">
-                        <Link to={"/gallery"}>
-                            <img
-                                src={Cards1}
-                                alt="architecture"
-                                className="object-cover w-full h-full"
-                            />
-                        </Link>
-                    </div>
+                    <Link to={"/gallery"}>
+                        <img src={Cards1} alt="architecture" className="" />
+                    </Link>
+
                     <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
                         <Link to={"/gallery"}>architecture</Link>
                     </div>
                 </div>
                 <div className="flex flex-col col-span-4 hover:underline underline-offset-8">
-                    <div className="aspect-[3/2]">
-                        <Link to={"/gallery"}>
-                            <img
-                                src={Cards2}
-                                alt="f & b"
-                                className="object-cover w-full h-full"
-                            />
-                        </Link>
-                    </div>
+                    <Link to={"/gallery"}>
+                        <img src={Cards2} alt="f & b" className="" />
+                    </Link>
+
                     <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
                         <Link to={"/gallery"}>f & b</Link>
                     </div>
                 </div>
                 <div className="flex flex-col col-span-4 hover:underline underline-offset-8">
-                    <div className="aspect-[3/2]">
-                        <Link to={"/gallery"}>
-                            <img
-                                src={Cards3}
-                                alt="architecture"
-                                className="object-cover w-full h-full"
-                            />
-                        </Link>
-                    </div>
+                    <Link to={"/gallery"}>
+                        <img src={Cards3} alt="architecture" className="" />
+                    </Link>
+
                     <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
                         <Link to={"/gallery"}>fashion</Link>
                     </div>
