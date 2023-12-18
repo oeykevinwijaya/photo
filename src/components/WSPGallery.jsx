@@ -84,7 +84,7 @@ const WSPGallery = ({ galleryImages }) => {
                                 <img
                                     src={slide.img}
                                     alt=""
-                                    className="object-cover h-full"
+                                    className="object-cover"
                                 />
                             </div>
                         );
