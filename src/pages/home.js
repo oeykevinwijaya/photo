@@ -9,6 +9,7 @@ import HeaderHome from "../components/headerHome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const home = () => {
     return (
@@ -94,37 +95,56 @@ const Content = () => {
 };
 
 function Cards() {
+    const navigate = useNavigate();
+
+    const handleExploreGallery = (selectedMenu) => {
+        navigate("/gallery", { state: { selectedMenu } });
+    };
+
     return (
         <div className="flex flex-col mx-5 mt-4">
             <div className="mb-1 text-2xl font-semibold md:mb-3 lg:mb-4 sm:text-3xl md:text-4xl lg:text-5xl">
                 library
             </div>
             <div className="grid grid-cols-12 gap-2 lg:gap-3">
-                <div className="flex flex-col col-span-4 hover:underline underline-offset-8">
-                    <Link to={"/gallery"}>
-                        <img src={Cards1} alt="architecture" className="" />
-                    </Link>
+                <div
+                    onClick={() => handleExploreGallery("architecture")}
+                    className="flex flex-col col-span-4 hover:underline underline-offset-8 hover:cursor-pointer"
+                >
+                    <img
+                        src={Cards1}
+                        alt="architecture"
+                        className=" hover:scale-[1.010]"
+                    />
 
                     <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
-                        <Link to={"/gallery"}>architecture</Link>
+                        architecture
                     </div>
                 </div>
-                <div className="flex flex-col col-span-4 hover:underline underline-offset-8">
-                    <Link to={"/gallery"}>
-                        <img src={Cards2} alt="f & b" className="" />
-                    </Link>
-
+                <div
+                    onClick={() => handleExploreGallery("foodandbeverage")}
+                    className="flex flex-col col-span-4 hover:underline underline-offset-8 hover:cursor-pointer"
+                >
+                    <img
+                        src={Cards2}
+                        alt="f & b"
+                        className=" hover:scale-[1.010]"
+                    />
                     <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
-                        <Link to={"/gallery"}>f & b</Link>
+                        f & b
                     </div>
                 </div>
-                <div className="flex flex-col col-span-4 hover:underline underline-offset-8">
-                    <Link to={"/gallery"}>
-                        <img src={Cards3} alt="architecture" className="" />
-                    </Link>
-
+                <div
+                    onClick={() => handleExploreGallery("fashion")}
+                    className="flex flex-col col-span-4 hover:underline underline-offset-8 hover:cursor-pointer"
+                >
+                    <img
+                        src={Cards3}
+                        alt="architecture"
+                        className=" hover:scale-[1.010]"
+                    />
                     <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
-                        <Link to={"/gallery"}>fashion</Link>
+                        fashion
                     </div>
                 </div>
             </div>

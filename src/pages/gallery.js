@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import HeaderGallery from "../components/headerGallery";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import { Architecture } from "../components/Architecture";
 import { Fashion } from "../components/fashion";
 import { Foodandbev } from "../components/foodandbev";
 
 const Gallery = () => {
-    const [selectedMenu, setSelectedMenu] = useState("architecture");
+    const location = useLocation();
+    const [selectedMenu, setSelectedMenu] = useState(
+        location.state.selectedMenu || "architecture"
+    );
 
     return (
         <div className="">
