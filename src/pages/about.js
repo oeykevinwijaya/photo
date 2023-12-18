@@ -13,25 +13,29 @@ const About = () => {
 function Content() {
     return (
         <div className="mt-5 mb-9">
-            <div className="grid grid-cols-12 gap-3 mx-3">
-                <div className="col-span-6 col-start-1 md:col-start-3 md:col-span-4 sm:col-start-2 sm:col-span-5 lg:col-span-3 lg:col-start-4">
+            <div className="flex flex-col gap-3 mx-3 md:grid md:grid-cols-6">
+                <div className="justify-end md:col-span-2 md:col-start-2">
                     <img
                         src={Aboutpic}
                         alt="kevinpic"
-                        className="object-cover w-full rounded-md sm:h-full lg:h-4/5 sm:w-full"
+                        className="object-cover w-full h-[50vh] md:h-4/5 rounded-md aspect-content aspect-w-1 aspect-h-1"
                     />
                 </div>
-                <div className="col-span-6 ml-3 md:col-span-5 lg:col-span-3">
-                    <div className="mb-4 text-3xl font-bold md:text-4xl lg:text-5xl">
+                <div className="mt-3 md:mt-0 md:ml-3 md:col-span-2">
+                    <div className="mb-4 text-2xl font-bold md:text-3xl lg:text-4xl">
                         about me
                     </div>
-                    <div className="text-sm sm:text-lg md:text-xl lg:text-xl xl:text-2xl">
-                        I'm Kevin, a seasoned photographer with over 6 years of
-                        experience. My experience are various, from
-                        architecture, food, fashion, weddings, events, products,
-                        and drone photography. I dedicate extra effort to
-                        capturing intricate details, ensuring that the results
-                        are of high quality and delivered promptly.
+                    <div className="text-xs sm:text-lg md:text-lg lg:text-lg xl:text-xl">
+                        I'm Kevin, a seasoned photographer and videographer with
+                        over 6 years of experience. My experience are various
+                        from architecture, food, fashion, weddings, events,
+                        products, and drone pilot.
+                    </div>
+                    &nbsp;&nbsp;
+                    <div className="text-xs sm:text-lg md:text-lg lg:text-lg xl:text-xl">
+                        I dedicate extra effort to capturing intricate details,
+                        ensuring that the results are of high quality and
+                        delivered promptly.
                     </div>
                 </div>
                 {/* <div className="col-span-6 ml-3">

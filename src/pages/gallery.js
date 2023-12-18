@@ -10,7 +10,7 @@ import { Foodandbev } from "../components/foodandbev";
 const Gallery = () => {
     const location = useLocation();
     const [selectedMenu, setSelectedMenu] = useState(
-        location.state.selectedMenu || "architecture"
+        location.state?.selectedMenu || "architecture"
     );
 
     return (

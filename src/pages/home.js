@@ -32,7 +32,7 @@ const Content = () => {
         }, 4000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [backgroundImages.length]);
 
     const styles = {
         backgroundImage: `url(${backgroundImages[currentBgIndex]})`,
