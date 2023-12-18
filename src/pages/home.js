@@ -1,15 +1,20 @@
-import Cards1 from "../picture/cards-1a.jpg";
-import Cards2 from "../picture/cards-2.jpg";
-import Cards3 from "../picture/cards-3a.jpg";
-import { Link } from "react-router-dom";
-import bg1 from "../picture/interior-2.jpg";
-import bg2 from "../picture/home2.jpg";
-import bg3 from "../picture/home3.jpg";
-import HeaderHome from "../components/headerHome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+import Cards1 from "../picture/cards-1a.jpg";
+import Cards2 from "../picture/cards-2.jpg";
+import Cards3 from "../picture/cards-3a.jpg";
+import Cards4 from "../picture/cards-4.jpg";
+import Cards5 from "../picture/cards-5.jpg";
+import Cards6 from "../picture/cards-6.jpg";
+
+import bg1 from "../picture/interior-2.jpg";
+import bg2 from "../picture/home2.jpg";
+import bg3 from "../picture/home3.jpg";
+import HeaderHome from "../components/headerHome";
 
 const home = () => {
     return (
@@ -55,9 +60,9 @@ const Content = () => {
         backgroundColor: overlayColor,
     };
 
-    const handleScrollToBottom = () => {
-        window.scrollTo({
-            top: document.body.scrollHeight,
+    const handleScrollPageDown = () => {
+        window.scrollBy({
+            top: window.innerHeight,
             behavior: "smooth",
         });
     };
@@ -82,7 +87,7 @@ const Content = () => {
                         <Link to={"/gallery"}>explore gallery</Link>
                     </button>
                     <FontAwesomeIcon
-                        onClick={handleScrollToBottom}
+                        onClick={handleScrollPageDown}
                         bounce
                         icon={faChevronCircleDown}
                         className="inset-x-0 bottom-0 h-10 pt-96 lg:h-14 btnClose"
@@ -114,7 +119,7 @@ function Cards() {
                     <img
                         src={Cards1}
                         alt="architecture"
-                        className=" hover:scale-[1.010]"
+                        className="aspect-square object-cover hover:scale-[1.010]"
                     />
 
                     <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
@@ -128,7 +133,7 @@ function Cards() {
                     <img
                         src={Cards2}
                         alt="f & b"
-                        className=" hover:scale-[1.010]"
+                        className="aspect-square object-cover hover:scale-[1.010]"
                     />
                     <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
                         f & b
@@ -141,10 +146,52 @@ function Cards() {
                     <img
                         src={Cards3}
                         alt="architecture"
-                        className=" hover:scale-[1.010]"
+                        className="aspect-square object-cover hover:scale-[1.010]"
                     />
                     <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
                         fashion
+                    </div>
+                </div>
+            </div>
+            <div className="grid grid-cols-12 gap-2 mt-2 lg:gap-3 lg:mt-10">
+                <div
+                    onClick={() => handleExploreGallery("event")}
+                    className="flex flex-col col-span-4 hover:underline underline-offset-8 hover:cursor-pointer"
+                >
+                    <img
+                        src={Cards4}
+                        alt="event"
+                        className="aspect-square object-cover hover:scale-[1.010]"
+                    />
+
+                    <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
+                        event
+                    </div>
+                </div>
+                <div
+                    onClick={() => handleExploreGallery("drone")}
+                    className="flex flex-col col-span-4 hover:underline underline-offset-8 hover:cursor-pointer"
+                >
+                    <img
+                        src={Cards5}
+                        alt="drone"
+                        className="aspect-square object-cover hover:scale-[1.010]"
+                    />
+                    <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
+                        drone
+                    </div>
+                </div>
+                <div
+                    onClick={() => handleExploreGallery("etc")}
+                    className="flex flex-col col-span-4 hover:underline underline-offset-8 hover:cursor-pointer"
+                >
+                    <img
+                        src={Cards6}
+                        alt="etc"
+                        className=" hover:scale-[1.010] aspect-square object-cover"
+                    />
+                    <div className="mt-1 text-lg font-medium text-center md:font-semibold lg:mt-3 sm:text-xl md:text-2xl lg:text-3xl">
+                        etc
                     </div>
                 </div>
             </div>

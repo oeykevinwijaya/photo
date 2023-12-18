@@ -97,7 +97,7 @@ function GalleryMenu({ selectedMenu, setSelectedMenu }) {
         "etc",
     ]; // map your menu items to an array
     return (
-        <Slider {...settings} className="mb-10 bg-gray-100 rounded-lg">
+        <Slider {...settings} className="mt-2 mb-10 bg-gray-200 rounded-lg">
             {menuItems.map((item, index) => (
                 <div
                     key={index}
