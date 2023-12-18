@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photo/static/css/main.5b5fcabf.css",
-    "main.js": "/photo/static/js/main.da3fcf82.js",
+    "main.css": "/photo/static/css/main.3ba3b419.css",
+    "main.js": "/photo/static/js/main.72289378.js",
     "static/js/787.7efd31bd.chunk.js": "/photo/static/js/787.7efd31bd.chunk.js",
     "static/media/fnb1.jpg": "/photo/static/media/fnb1.c3c81fe43701d735c346.jpg",
     "static/media/fnb16.jpg": "/photo/static/media/fnb16.2cc0088531bf7d21d372.jpg",
@@ -16,9 +16,11 @@
     "static/media/etc6.jpg": "/photo/static/media/etc6.93b54980407dd369684f.jpg",
     "static/media/drone4.jpg": "/photo/static/media/drone4.4440665d58f001d0b803.jpg",
     "static/media/drone6.jpg": "/photo/static/media/drone6.35c141b3a90082ecf344.jpg",
+    "static/media/cards-4.jpg": "/photo/static/media/cards-4.324eafc3deca89f17e1a.jpg",
     "static/media/drone1.jpg": "/photo/static/media/drone1.324eafc3deca89f17e1a.jpg",
     "static/media/etc5.jpg": "/photo/static/media/etc5.b99eb246108b82f3d0fa.jpg",
     "static/media/event26.jpg": "/photo/static/media/event26.5e4d185fcaa0d9833695.jpg",
+    "static/media/cards-6.jpg": "/photo/static/media/cards-6.e55213437a8ebe577f86.jpg",
     "static/media/etc4.jpg": "/photo/static/media/etc4.e55213437a8ebe577f86.jpg",
     "static/media/event15.jpg": "/photo/static/media/event15.e0299badc171d6a82d27.jpg",
     "static/media/etc2.jpg": "/photo/static/media/etc2.10a3b969b98d4036502a.jpg",
@@ -45,6 +47,7 @@
     "static/media/drone15.jpg": "/photo/static/media/drone15.c9612add671ab287d600.jpg",
     "static/media/event22.jpg": "/photo/static/media/event22.c358a9726201d4229ab1.jpg",
     "static/media/event16.jpg": "/photo/static/media/event16.b139a4cc7b4e73451bf4.jpg",
+    "static/media/cards-5.jpg": "/photo/static/media/cards-5.6ef83ea8e0c7afa65ed8.jpg",
     "static/media/event2.jpg": "/photo/static/media/event2.6ef83ea8e0c7afa65ed8.jpg",
     "static/media/arc23.jpg": "/photo/static/media/arc23.866c3a1a0eecc144c07b.jpg",
     "static/media/drone9.jpg": "/photo/static/media/drone9.7b6f83030d13d815cffa.jpg",
@@ -147,12 +150,12 @@
     "static/media/slick.ttf": "/photo/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/photo/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/photo/index.html",
-    "main.5b5fcabf.css.map": "/photo/static/css/main.5b5fcabf.css.map",
-    "main.da3fcf82.js.map": "/photo/static/js/main.da3fcf82.js.map",
+    "main.3ba3b419.css.map": "/photo/static/css/main.3ba3b419.css.map",
+    "main.72289378.js.map": "/photo/static/js/main.72289378.js.map",
     "787.7efd31bd.chunk.js.map": "/photo/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b5fcabf.css",
-    "static/js/main.da3fcf82.js"
+    "static/css/main.3ba3b419.css",
+    "static/js/main.72289378.js"
   ]
 }
