@@ -27,9 +27,10 @@ function Content() {
                     </div>
                     <div className="text-xs sm:text-lg md:text-lg lg:text-lg xl:text-xl">
                         I'm Kevin, a seasoned photographer and videographer with
-                        over 6 years of experience. My experience are various
-                        from architecture, food, fashion, weddings, events,
-                        products, and drone pilot.
+                        over 6 years of experience based on Melbourne,
+                        Australia. My experience are various from architecture,
+                        food, fashion, weddings, events, products, and drone
+                        pilot.
                     </div>
                     &nbsp;&nbsp;
                     <div className="text-xs sm:text-lg md:text-lg lg:text-lg xl:text-xl">
