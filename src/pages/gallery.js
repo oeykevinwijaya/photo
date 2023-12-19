@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import HeaderGallery from "../components/headerGallery";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useRef } from "react";
 
 import { Architecture } from "../components/Architecture";
 import { Fashion } from "../components/fashion";
@@ -18,6 +19,7 @@ const Gallery = () => {
     const [selectedMenu, setSelectedMenu] = useState(
         location.state?.selectedMenu || "architecture"
     );
+    const sliderIndex = location.state?.sliderIndex || 0;
 
     return (
         <div className="">
@@ -77,11 +79,8 @@ function PrevArrow(props) {
 }
 
 function GalleryMenu({ selectedMenu, setSelectedMenu }) {
-    const [localSelectedMenu, setLocalSelectedMenu] = useState(selectedMenu);
+    const sliderRef = useRef(null);
 
-    useEffect(() => {
-        setLocalSelectedMenu(selectedMenu);
-    }, [selectedMenu]);
     const settings = {
         dots: true,
         infinite: true,
@@ -90,7 +89,10 @@ function GalleryMenu({ selectedMenu, setSelectedMenu }) {
         slidesToScroll: 1,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        afterChange: (current) => setSelectedMenu(menuItems[current]), // set selected menu on slide change
+        beforeChange: (oldIndex, newIndex) => {
+            const newSelectedMenu = menuItems[newIndex];
+            setSelectedMenu(newSelectedMenu);
+        },
     };
 
     const menuItems = [
@@ -100,19 +102,32 @@ function GalleryMenu({ selectedMenu, setSelectedMenu }) {
         "event",
         "drone",
         "etc",
-    ]; // map your menu items to an array
+    ];
+
+    // Update slider when selectedMenu changes
+    useEffect(() => {
+        const currentIndex = menuItems.indexOf(selectedMenu);
+        if (currentIndex !== -1 && sliderRef.current) {
+            sliderRef.current.slickGoTo(currentIndex);
+        }
+    }, [selectedMenu]);
+
     return (
-        <Slider {...settings} className="mt-2 mb-10 bg-gray-200 rounded-lg">
+        <Slider
+            {...settings}
+            className="mt-2 mb-10 bg-gray-200 rounded-lg"
+            ref={sliderRef}
+        >
             {menuItems.map((item, index) => (
                 <div
                     key={index}
                     style={{
                         margin: "0px",
                         padding: "10px",
-                        width: "70vw", // set the width to 70% of the viewport width
+                        width: "70vw",
                     }}
                     className={`text-md font-semibold underline-offset-8 text-center hover:underline text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl ${
-                        localSelectedMenu === item
+                        selectedMenu === item
                             ? "underline underline-offset-8"
                             : ""
                     }`}

@@ -101,9 +101,13 @@ const Content = () => {
 
 function Cards() {
     const navigate = useNavigate();
+    const [currentBgIndex, setCurrentBgIndex] = useState(0);
 
-    const handleExploreGallery = (selectedMenu) => {
-        navigate("/gallery", { state: { selectedMenu } });
+    const handleExploreGallery = (selectedMenu, index) => {
+        setCurrentBgIndex(index); // Update currentBgIndex
+        navigate(`/gallery`, {
+            state: { selectedMenu, sliderIndex: currentBgIndex },
+        });
     };
 
     return (
@@ -113,7 +117,7 @@ function Cards() {
             </div>
             <div className="grid grid-cols-12 gap-2 lg:gap-3">
                 <div
-                    onClick={() => handleExploreGallery("architecture")}
+                    onClick={() => handleExploreGallery("architecture", 0)}
                     className="flex flex-col col-span-4 hover:underline underline-offset-8 hover:cursor-pointer"
                 >
                     <img
@@ -127,7 +131,7 @@ function Cards() {
                     </div>
                 </div>
                 <div
-                    onClick={() => handleExploreGallery("foodandbeverage")}
+                    onClick={() => handleExploreGallery("foodandbeverage", 1)}
                     className="flex flex-col col-span-4 hover:underline underline-offset-8 hover:cursor-pointer"
                 >
                     <img
@@ -140,7 +144,7 @@ function Cards() {
                     </div>
                 </div>
                 <div
-                    onClick={() => handleExploreGallery("fashion")}
+                    onClick={() => handleExploreGallery("fashion", 2)}
                     className="flex flex-col col-span-4 hover:underline underline-offset-8 hover:cursor-pointer"
                 >
                     <img
