@@ -27,7 +27,22 @@ const home = () => {
 };
 const Content = () => {
     const [currentBgIndex, setCurrentBgIndex] = useState(0);
-    const backgroundImages = [bg1, bg2, bg3];
+    const [backgroundImages, setBackgroundImages] = useState([]);
+
+    useEffect(() => {
+        // Preload images
+        const preloadImages = [bg1, bg2, bg3].map((imageSrc) => {
+            const img = new Image();
+            img.src = imageSrc;
+            return img;
+        });
+
+        Promise.all(preloadImages)
+            .then(() => {
+                setBackgroundImages([bg1, bg2, bg3]);
+            })
+            .catch((error) => console.error("Error preloading images:", error));
+    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -37,7 +52,7 @@ const Content = () => {
         }, 4000);
 
         return () => clearInterval(interval);
-    }, [backgroundImages.length]);
+    }, [backgroundImages]);
 
     const styles = {
         backgroundImage: `url(${backgroundImages[currentBgIndex]})`,
@@ -88,9 +103,8 @@ const Content = () => {
                     </button>
                     <FontAwesomeIcon
                         onClick={handleScrollPageDown}
-                        bounce
                         icon={faChevronCircleDown}
-                        className="inset-x-0 bottom-0 h-10 pt-96 lg:h-14 btnClose"
+                        className="inset-x-0 bottom-0 h-10 pt-96 lg:h-14 btnClose bounce-animation"
                         style={{ color: "#7ec4cf" }}
                     />
                 </div>

@@ -19,7 +19,11 @@ const Gallery = () => {
     const [selectedMenu, setSelectedMenu] = useState(
         location.state?.selectedMenu || "architecture"
     );
-    const sliderIndex = location.state?.sliderIndex || 0;
+
+    useEffect(() => {
+        // Scroll to the top of the page when the component mounts
+        window.scrollTo(0, 0);
+    }, []); // Empty dependency array ensures that this effect runs only once on mount
 
     return (
         <div className="">

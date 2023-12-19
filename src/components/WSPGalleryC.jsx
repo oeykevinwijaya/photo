@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -25,17 +25,44 @@ const WSPGalleryB = ({ galleryImages }) => {
 
     // Previous Image
     const prevSlide = () => {
-        slideNumber === 0
-            ? setSlideNumber(galleryImages.length - 1)
-            : setSlideNumber(slideNumber - 1);
+        setSlideNumber((prevSlide) =>
+            prevSlide === 0 ? galleryImages.length - 1 : prevSlide - 1
+        );
     };
 
     // Next Image
     const nextSlide = () => {
-        slideNumber + 1 === galleryImages.length
-            ? setSlideNumber(0)
-            : setSlideNumber(slideNumber + 1);
+        setSlideNumber((prevSlide) =>
+            prevSlide + 1 === galleryImages.length ? 0 : prevSlide + 1
+        );
     };
+
+    // Keyboard Event Handlers
+    const handleKeyDown = (e) => {
+        switch (e.key) {
+            case "ArrowLeft":
+                prevSlide();
+                break;
+            case "ArrowRight":
+                nextSlide();
+                break;
+            case "Escape":
+                handleCloseModal();
+                break;
+            default:
+                break;
+        }
+    };
+
+    // Add event listeners on mount
+    useEffect(() => {
+        document.addEventListener("keydown", handleKeyDown);
+
+        // Clean up event listeners on component unmount
+        return () => {
+            document.removeEventListener("keydown", handleKeyDown);
+        };
+    }, []);
 
     return (
         <div>
