@@ -12,7 +12,8 @@ import { Fashion } from "../components/fashion";
 import { Foodandbev } from "../components/foodandbev";
 import { Drone } from "../components/drone";
 import { Event } from "../components/event";
-import { Etc } from "../components/etc";
+import { Family } from "../components/family";
+// import { Etc } from "../components/etc";
 
 const Gallery = () => {
     const location = useLocation();
@@ -38,7 +39,7 @@ const Gallery = () => {
                 {selectedMenu === "fashion" && <Fashion />}
                 {selectedMenu === "event" && <Event />}
                 {selectedMenu === "drone" && <Drone />}
-                {selectedMenu === "etc" && <Etc />}
+                {selectedMenu === "family" && <Family />}
             </div>
         </div>
     );
@@ -105,7 +106,7 @@ function GalleryMenu({ selectedMenu, setSelectedMenu }) {
         "fashion",
         "event",
         "drone",
-        "etc",
+        "family",
     ];
 
     // Update slider when selectedMenu changes

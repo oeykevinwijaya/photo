@@ -11,7 +11,7 @@ import Cards4 from "../picture/cards-4.jpg";
 import Cards5 from "../picture/cards-5.jpg";
 import Cards6 from "../picture/cards-6.jpg";
 
-import bg1 from "../picture/interior-2.jpg";
+import bg1 from "../picture/home1.jpg";
 import bg2 from "../picture/home2.jpg";
 import bg3 from "../picture/home3.jpg";
 import HeaderHome from "../components/headerHome";
