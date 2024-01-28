@@ -15,6 +15,9 @@ import fam12 from "../picture/fam/fam12.jpg";
 import fam13 from "../picture/fam/fam13.jpg";
 import fam14 from "../picture/fam/fam14.jpg";
 import fam15 from "../picture/fam/fam15.jpg";
+import fam16 from "../picture/fam/fam16.jpg";
+import fam17 from "../picture/fam/fam17.jpg";
+import fam18 from "../picture/fam/fam18.jpg";
 
 export const Family = () => {
     const galleryImages = [
@@ -33,6 +36,9 @@ export const Family = () => {
         { img: fam13 },
         { img: fam14 },
         { img: fam15 },
+        { img: fam16 },
+        { img: fam17 },
+        { img: fam18 },
     ];
 
     return (
