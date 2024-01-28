@@ -24,6 +24,12 @@ import arc21 from "../picture/arc/arc21.jpg";
 import arc22 from "../picture/arc/arc22.jpg";
 import arc23 from "../picture/arc/arc23.jpg";
 import arc24 from "../picture/arc/arc24.jpg";
+import arc25 from "../picture/arc/arc25.jpg";
+import arc26 from "../picture/arc/arc26.jpg";
+import arc27 from "../picture/arc/arc27.jpg";
+import arc28 from "../picture/arc/arc28.jpg";
+import arc29 from "../picture/arc/arc29.jpg";
+import arc30 from "../picture/arc/arc30.jpg";
 
 export const Architecture = () => {
     const galleryImages = [
@@ -47,12 +53,6 @@ export const Architecture = () => {
         },
         {
             img: arc7,
-        },
-        {
-            img: arc23,
-        },
-        {
-            img: arc22,
         },
         {
             img: arc8,
@@ -94,10 +94,34 @@ export const Architecture = () => {
             img: arc20,
         },
         {
+            img: arc21,
+        },
+        {
+            img: arc22,
+        },
+        {
+            img: arc23,
+        },
+        {
             img: arc24,
         },
         {
-            img: arc21,
+            img: arc25,
+        },
+        {
+            img: arc26,
+        },
+        {
+            img: arc27,
+        },
+        {
+            img: arc28,
+        },
+        {
+            img: arc29,
+        },
+        {
+            img: arc30,
         },
     ];
     return (
